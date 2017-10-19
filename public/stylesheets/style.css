@@ -62,7 +62,7 @@ a {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline {
-  margin-top: 2em;
+  margin-top: 3em;
   white-space: nowrap;
   overflow-x: hidden;
 }
@@ -185,7 +185,7 @@ li {
 }
 
 div.arrows {
-  margin-top: 3em;
+  margin-top: 1em;
 }
 
 /* GENERAL MEDIA QUERIES
