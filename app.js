@@ -26,14 +26,14 @@ const express = require('express'),
 .use('/', index)
 
 // catch 404 and forward to error handler
-.use(function(req, res, next) {
+.use((req, res, next) => {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 })
 
 // error handler
-.use(function(err, req, res) {
+.use((err, req, res) => {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
