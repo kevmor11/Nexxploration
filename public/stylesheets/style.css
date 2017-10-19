@@ -36,7 +36,7 @@ a {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .section {
-  background: #F45B69;
+  background: #456990;
   padding: 1em 0;
 }
 
@@ -49,12 +49,12 @@ a {
 
 .section h1 {
   font-size: 2rem;
-  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
 }
 
 .section h2 {
   font-size: 1.3rem;
-  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
 }
 
 
@@ -101,7 +101,11 @@ a {
   height: 30px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: #F45B69;
+  background: #3f648d; /* Old Browsers */
+  background: -webkit-radial-gradient(center,#3f648d,#234973); /*Safari 5.1-6*/
+  background: -o-radial-gradient(center,#3f648d,#234973); /*Opera 11.1-12*/
+  background: -moz-radial-gradient(center,#3f648d,#234973); /*Fx 3.6-15*/
+  background: radial-gradient(ellipse at center, #3f648d, #234973); /*Standard*/
 }
 
 .timeline ol li div {
