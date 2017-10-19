@@ -15,7 +15,7 @@ button {
 
 body {
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-  background: url(https://i.stack.imgur.com/wPkOT.jpg) top center repeat-y;
+  background: url(../images/stars.jpg) top center repeat-y;
   background-size: cover;
   background-position:50% 50%;
   color: white;
