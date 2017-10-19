@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -185,7 +184,7 @@ div.arrows {
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 599px) {
+@media (min-width:320px) and (max-width:420px) {
   .timeline ol,
   .timeline ol li {
     width: auto;
@@ -220,8 +219,13 @@ div.arrows {
     position: static;
   }
 
+  div {
+    border-radius: .5em .5em .5em .5em !important;
+  }
+
   .timeline ol li:nth-child(odd) div {
     transform: none;
+    border-radius: .5em .5em .5em .5em;
   }
 
   .timeline ol li:nth-child(odd) div::before,
@@ -232,6 +236,7 @@ div.arrows {
     border: none;
     border-left: 1px solid white;
     height: 25px;
+    border-radius: .5em .5em .5em .5em;
   }
 
   .timeline ol li:last-child,
