@@ -4,6 +4,7 @@ const express = require('express'),
       logger = require('morgan'),
       cookieParser = require('cookie-parser'),
       bodyParser = require('body-parser'),
+      compression = require('compression'),
 
       // Routes
       index = require('./routes/index'),
@@ -20,6 +21,7 @@ const express = require('express'),
 .use(bodyParser.urlencoded({ extended: false }))
 .use(cookieParser())
 .use(express.static(path.join(__dirname, 'public')))
+.use(compression())
 
 .use('/', index)
 
