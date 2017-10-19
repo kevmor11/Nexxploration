@@ -14,8 +14,7 @@ const express = require('express'),
 .set('views', path.join(__dirname, 'views'))
 .set('view engine', 'ejs')
 
-// uncomment after placing your favicon in /public
-//   .use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 .use(logger('dev'))
 .use(bodyParser.json())
 .use(bodyParser.urlencoded({ extended: false }))
