@@ -18,7 +18,7 @@ body {
   background: url(https://i.stack.imgur.com/wPkOT.jpg) top center repeat-y;
   background-size: cover;
   background-position:50% 50%;
-  color: lightblue;
+  color: white;
 }
 
 p {
@@ -42,7 +42,7 @@ img.ship-icon {
 
 .section {
   background: #456990;
-  padding: 1em 0;
+  padding-bottom: 0.5em;
 }
 
 .section .container {
@@ -53,17 +53,19 @@ img.ship-icon {
 }
 
 .section h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   /* font-family: 'Rubik', sans-serif; */
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: lightblue;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 }
 
 .section h2 {
   font-size: 1.3rem;
   /* font-family: 'Rubik', sans-serif; */
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -200,6 +202,22 @@ div.arrows {
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (min-width:320px) and (max-width:420px) {
+  .section h1 {
+    font-size: 2rem;
+    /* font-family: 'Rubik', sans-serif; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightblue;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+    /* font-family: 'Rubik', sans-serif; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  }
+
   .timeline {
     margin-top: -.5em;
     white-space: nowrap;
