@@ -17,14 +17,16 @@
         <% launches.forEach((launch, i) => { %>
           <li>
             <div>
-              <time><a href="<%= launch.rocket.wikiURL %>"><%= launch.rocket.name %></a></time>
-              <i class="fa fa-thumb-tack" style="margin-left: 2px" aria-hidden="true"></i><a href="<%= launch.rocket.agencies[0].wikiURL %>" style="margin-left: 2px"> <%= launch.rocket.agencies[0].name %></a>
-              <p><i class="fa fa-location-arrow" aria-hidden="true"></i> <%= launch.location.name %></p>
-              <p><i class="fa fa-clock-o" aria-hidden="true"></i> <%= launch.net.substring(0, 22) %></p>
+              <time>
+                <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/783442-200.png" class='ship-icon'>
+                <a href="<%= launch.rocket.wikiURL %>"><%= launch.rocket.name %></a>
+              </time>
+              <i class="fa fa-thumb-tack" style="margin-left: 6px" aria-hidden="true"></i><a href="<%= launch.rocket.agencies[0].wikiURL %>" style="margin-left: 2px"> <%= launch.rocket.agencies[0].name %></a>
+              <p style="margin-left: 12px"><i class="fa fa-location-arrow" aria-hidden="true"></i> <%= launch.location.name %></p>
+              <p style="margin-left: 12px"><i class="fa fa-clock-o" aria-hidden="true"></i> <%= launch.net.substring(0, launch.net.indexOf(':') + 3) %></p>
             </div>
           </li>
         <% }); %>
-        <li></li>
       </ol>
 
       <div class="arrows">

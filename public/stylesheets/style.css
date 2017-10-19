@@ -32,6 +32,11 @@ a {
   text-decoration: none;
 }
 
+img.ship-icon {
+  display: inline;
+  width: 1.2em;
+}
+
 /* .section SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
