@@ -1,6 +1,6 @@
 # Nexxploration
 
-![](https://i.imgur.com/NYVx5VZ.png)
+![](https://i.imgur.com/PaPQS9n.png)
 
 Web application for tracking upcoming Space Launch Missions.
 
