@@ -37,6 +37,24 @@ img.ship-icon {
   width: 1.2em;
 }
 
+p.desc {
+  margin-left: -6px;
+  margin-top: -8px;
+  color: white;
+}
+
+i.tack {
+  margin-left: 1px
+}
+
+a.url {
+  margin-left: 2px;
+}
+
+p.location {
+  margin-left: 12px";
+}
+
 /* .section SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

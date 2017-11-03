@@ -7,7 +7,7 @@
     <section class="section intro">
       <div class="container">
         <h1>NEXXPLORATION</h1>
-        <p style="margin-left: -6px; margin-top: -8px; color: white;">Upcoming Space Launch Missions</p>
+        <p class="desc">Upcoming Space Launch Missions</p>
       </div>
     </section>
 
@@ -20,9 +20,9 @@
                 <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/783442-200.png" class='ship-icon'>
                 <a href="<%= launch.rocket.wikiURL %>"><%= launch.rocket.name %></a>
               </time>
-              <i class="fa fa-thumb-tack" style="margin-left: 6px" aria-hidden="true"></i><a href="<%= launch.rocket.agencies[0].wikiURL %>" style="margin-left: 2px"> <%= launch.rocket.agencies[0].name %></a>
-              <p style="margin-left: 12px"><i class="fa fa-location-arrow" aria-hidden="true"></i> <%= launch.location.name %></p>
-              <p style="margin-left: 12px"><i class="fa fa-clock-o" aria-hidden="true"></i> <%= launch.net.substring(0, launch.net.indexOf(':') + 3) %></p>
+              <i class="fa fa-thumb-tack tack" aria-hidden="true"></i><a href="<%= launch.rocket.agencies[0].wikiURL %>" class="url"> <%= launch.rocket.agencies[0].name %></a>
+              <p class="location"><i class="fa fa-location-arrow" aria-hidden="true"></i> <%= launch.location.name %></p>
+              <p class="location"><i class="fa fa-clock-o" aria-hidden="true"></i> <%= launch.net.substring(0, launch.net.indexOf(':') + 3) %></p>
             </div>
           </li>
         <% }); %>
