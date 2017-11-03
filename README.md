@@ -27,4 +27,4 @@ localhost:3000
 
 OR
 
-https://serene-wave-35963.herokuapp.com
+https://nexxploration.herokuapp.com/
