@@ -5,6 +5,7 @@ const express = require('express'),
       cookieParser = require('cookie-parser'),
       bodyParser = require('body-parser'),
       compression = require('compression'),
+      http = require('http'),
 
       // Routes
       index = require('./routes/index'),
@@ -42,5 +43,9 @@ const express = require('express'),
   res.status(err.status || 500);
   res.render('error');
 });
+
+setInterval(() => {
+  http.get("http://nexxploration.herokuapp.com");
+}, 900000);
 
 module.exports = app;
