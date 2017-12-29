@@ -44,8 +44,4 @@ const express = require('express'),
   res.render('error');
 });
 
-setInterval(() => {
-  http.get("http://nexxploration.herokuapp.com");
-}, 900000);
-
 module.exports = app;
